@@ -3,6 +3,8 @@
     <th-gltf
       :src="src"
       :rotation="rotation"
+      :hl-intensity="hlIntensity"
+      :dl-intensity="dlIntensity"
       background-color="#648e93"
       @thLoad="loadHandle"
       @thDbClick="thDbClickHandle"
@@ -21,7 +23,9 @@ export default {
   data() {
     return {
       src: '/build/scene.gltf',
-      rotation: [0, -1.0, 0]
+      rotation: [0, -2.2, 0],
+      dlIntensity: 0.6,
+      hlIntensity: 0.8
     }
   },
 

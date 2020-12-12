@@ -62,6 +62,10 @@ rotation					旋转					Array			[0, 0, 0]
 backgroundColor			scene背景色				String			#e0e0e0
 mode					模式（是否显示辅助内容）	String			prod
 
+dlIntensity				平行光强度				Number			0.6
+
+hlIntensity				半球光强度				number			0.8
+
 ### events
 thLoad					模型加载完毕未加入scene
 thDbClick				mesh双击
