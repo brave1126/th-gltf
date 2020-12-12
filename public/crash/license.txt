@@ -1,0 +1,11 @@
+Model Information:
+* title:	VW Golf 2
+* source:	https://sketchfab.com/3d-models/vw-golf-2-7f8333eaf0f44ad88e1088fd4272d87a
+* author:	glebchik20 (https://sketchfab.com/glebchik20)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "VW Golf 2" (https://sketchfab.com/3d-models/vw-golf-2-7f8333eaf0f44ad88e1088fd4272d87a) by glebchik20 (https://sketchfab.com/glebchik20) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
