@@ -2,6 +2,8 @@
   <div class="container">
     <th-gltf
       :src="src"
+      :rotation="rotation"
+      background-color="#648e93"
       @thLoad="loadHandle"
       @thDbClick="thDbClickHandle"
       @thHoverClick="thHoverClickHandle"
@@ -18,7 +20,8 @@ export default {
 
   data() {
     return {
-      src: '/build/scene.gltf'
+      src: '/build/scene.gltf',
+      rotation: [0, -1.0, 0]
     }
   },
 

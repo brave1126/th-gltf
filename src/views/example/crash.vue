@@ -2,6 +2,7 @@
   <div class="container">
     <th-gltf
       :src="src"
+      background-color="#648e93"
       @thLoad="loadHandle"
     />
   </div>
@@ -16,10 +17,7 @@ export default {
 
   data() {
     return {
-      src: '/crash/scene.gltf',
-      scale: [3, 3, 3],
-      position: [0, 0, 0],
-      rotation: [0, 0, 0]
+      src: '/crash/scene.gltf'
     }
   },
 

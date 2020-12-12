@@ -65,14 +65,20 @@ export const constantRoutes = [
       {
         path: 'build',
         name: 'Build',
-        component: () => import('@/views/example/build.vue'),
-        meta: { title: 'Build', icon: 'table' }
+        component: () => import('@/views/example/build'),
+        meta: { title: 'Build', icon: 'model' }
       },
       {
         path: 'crash',
         name: 'Crash',
-        component: () => import('@/views/example/crash.vue'),
-        meta: { title: 'Crash', icon: 'tree' }
+        component: () => import('@/views/example/crash'),
+        meta: { title: 'Crash', icon: 'model' }
+      },
+      {
+        path: 'matilda',
+        name: 'Matilda',
+        component: () => import('@/views/example/matilda'),
+        meta: { title: 'matilda', icon: 'model' }
       }
     ]
   },
