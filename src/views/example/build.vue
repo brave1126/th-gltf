@@ -5,6 +5,7 @@
       :rotation="rotation"
       :hl-intensity="hlIntensity"
       :dl-intensity="dlIntensity"
+      mode="dev"
       background-color="#648e93"
       @thLoad="loadHandle"
       @thDbClick="thDbClickHandle"
