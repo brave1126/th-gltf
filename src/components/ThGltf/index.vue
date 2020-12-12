@@ -44,6 +44,16 @@ export default {
     mode: {
       type: String,
       default: 'prod'
+    },
+    // 平行光光强
+    dlIntensity: {
+      type: Number,
+      default: 0.6
+    },
+    // 半球光光强
+    hlIntensity: {
+      type: Number,
+      default: 0.8
     }
   },
   data() {
@@ -91,7 +101,7 @@ export default {
   methods: {
     init() {
       this.container = this.$refs['container']
-      this.scene = createScene(this.backgroundColor, this.ambientLightColor, this.mode)
+      this.scene = createScene(this.backgroundColor, this.ambientLightColor, this.mode, this.dlIntensity, this.hlIntensity)
       this.renderer = createRenderer(this.container)
       this.container.appendChild(this.renderer.domElement)
       this.camera = getCamera(this.container)

@@ -1,3 +1,5 @@
+// 未使用
+
 import { DirectionalLight, Vector3, HemisphereLight } from 'three'
 // 平行光不衰减
 const directionalLight = new DirectionalLight(0xffffff, 0.6) //  添加了一个白色的平行光(颜色,光强)

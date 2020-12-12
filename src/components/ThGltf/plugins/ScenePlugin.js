@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { Scene, Color, AmbientLight, Fog, Mesh, PlaneBufferGeometry,
   MeshPhongMaterial, GridHelper, HemisphereLightHelper,
+  DirectionalLight, Vector3, HemisphereLight,
   DirectionalLightHelper, MeshLambertMaterial } from 'three'
-import { directionalLight, behindDirectionalLight,
-  leftDirectionalLight, rightDirectionalLight, hemisphereLight } from './LightPlugin'
+// import { directionalLight, behindDirectionalLight,
+//   leftDirectionalLight, rightDirectionalLight, hemisphereLight } from './LightPlugin'
 
-export default function createScene(backgroundColor, AmbientLightColor, mode) {
+export default function createScene(backgroundColor, AmbientLightColor, mode, dlIntensity, hlIntensity) {
   const scene = new Scene()
 
   // 设置背景颜色
@@ -19,15 +20,21 @@ export default function createScene(backgroundColor, AmbientLightColor, mode) {
   scene.add(grid)
 
   // scene.add(new AmbientLight(AmbientLightColor)) // 添加一个全局环境光
-
-  scene.add(directionalLight) // 添加平行光
-  const dirLightHelper = new DirectionalLightHelper(directionalLight, 10)
-
   // scene.add(behindDirectionalLight) // 添加背部光源
   // scene.add(leftDirectionalLight) // 添加左侧光源
   // scene.add(rightDirectionalLight) // 添加右侧光源
 
-  scene.add(hemisphereLight) // 添加半球光
+  // 添加平行光
+  const directionalLight = new DirectionalLight(0xffffff, dlIntensity) //  添加了一个白色的平行光(颜色,光强)
+  directionalLight.position.set(0, 30, 30) //  设置光源位置
+  directionalLight.lookAt(new Vector3())
+  scene.add(directionalLight)
+  const dirLightHelper = new DirectionalLightHelper(directionalLight, 10)
+
+  // 添加半球光
+  const hemisphereLight = new HemisphereLight(0xffffff, 0xffffff, hlIntensity)
+  hemisphereLight.position.set(0, 30, 0)
+  scene.add(hemisphereLight)
   const hemiLightHelper = new HemisphereLightHelper(hemisphereLight, 10)
 
   if (mode === 'dev') {
