@@ -1,0 +1,11 @@
+Model Information:
+* title:	Armored Bike Draft
+* source:	https://sketchfab.com/3d-models/armored-bike-draft-15d04cdf874544adb3836178e3e1d7e7
+* author:	A1ex_Thunder (https://sketchfab.com/A1ex_Thunder)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Armored Bike Draft" (https://sketchfab.com/3d-models/armored-bike-draft-15d04cdf874544adb3836178e3e1d7e7) by A1ex_Thunder (https://sketchfab.com/A1ex_Thunder) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

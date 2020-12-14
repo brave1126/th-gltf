@@ -81,10 +81,10 @@ export const constantRoutes = [
         meta: { title: 'matilda', icon: 'model' }
       },
       {
-        path: 'tufu',
-        name: 'Tufu',
-        component: () => import('@/views/example/tufu'),
-        meta: { title: 'tufu', icon: 'model' }
+        path: 'bike',
+        name: 'Bike',
+        component: () => import('@/views/example/bike'),
+        meta: { title: 'bike', icon: 'model' }
       }
     ]
   },
