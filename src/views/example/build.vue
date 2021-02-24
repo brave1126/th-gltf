@@ -34,10 +34,12 @@ export default {
     loadHandle(gltf) {
       console.log(gltf)
     },
+    // 双击事件处理函数
     thDbClickHandle(intersect) {
       console.log(intersect.object.name)
       alert(intersect.object.name)
     },
+    // hover事件处理函数
     thHoverClickHandle(intersect) {
       // console.log(intersect.object)
     }
