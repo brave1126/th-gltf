@@ -1,8 +1,8 @@
-import {Vector3} from 'three'
+import { Vector3 } from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 // 相机控制配置
-export default function(camera,dom) {
-  const cameraControl = new OrbitControls(camera,dom)
+export default function(camera, dom) {
+  const cameraControl = new OrbitControls(camera, dom)
   // 是否开启当前的控制器 默认值为true
   cameraControl.enabled = true
 

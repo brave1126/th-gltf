@@ -32,6 +32,7 @@ export default {
       type: Array,
       default: () => [0, 0, 0]
     },
+    // 背景颜色
     backgroundColor: {
       type: String,
       default: '#e0e0e0'
@@ -41,6 +42,7 @@ export default {
       type: String,
       default: '0x404040'
     },
+    // 模式
     mode: {
       type: String,
       default: 'prod'

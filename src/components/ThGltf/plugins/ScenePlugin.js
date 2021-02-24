@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
-import { Scene, Color, AmbientLight, Fog, Mesh, PlaneBufferGeometry,
-  MeshPhongMaterial, GridHelper, HemisphereLightHelper,
+import { Scene, Color, Fog,
+  GridHelper, HemisphereLightHelper,
   DirectionalLight, Vector3, HemisphereLight,
-  DirectionalLightHelper, MeshLambertMaterial } from 'three'
-// import { directionalLight, behindDirectionalLight,
-//   leftDirectionalLight, rightDirectionalLight, hemisphereLight } from './LightPlugin'
+  DirectionalLightHelper } from 'three'
 
 export default function createScene(backgroundColor, AmbientLightColor, mode, dlIntensity, hlIntensity) {
   const scene = new Scene()
@@ -18,11 +15,6 @@ export default function createScene(backgroundColor, AmbientLightColor, mode, dl
   grid.material.opacity = 0.2
   grid.material.transparent = true
   scene.add(grid)
-
-  // scene.add(new AmbientLight(AmbientLightColor)) // 添加一个全局环境光
-  // scene.add(behindDirectionalLight) // 添加背部光源
-  // scene.add(leftDirectionalLight) // 添加左侧光源
-  // scene.add(rightDirectionalLight) // 添加右侧光源
 
   // 添加平行光
   const directionalLight = new DirectionalLight(0xffffff, dlIntensity) //  添加了一个白色的平行光(颜色,光强)

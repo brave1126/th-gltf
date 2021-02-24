@@ -1,9 +1,9 @@
-import {PerspectiveCamera,Vector3} from 'three'
+import { PerspectiveCamera, Vector3 } from 'three'
 // 初始化相机
 export default function(container) {
   const camera = new PerspectiveCamera(
     75,
-    container.offsetWidth/container.offsetHeight,
+    container.offsetWidth / container.offsetHeight,
     0.1,
     1000
   )
